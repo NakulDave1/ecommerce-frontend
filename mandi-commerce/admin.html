@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    
+
+    <h1 class="text-center  m-0 page-title"><img onclick="openIndexHTML()" src="images/logo.png" class="logo" alt="" style="border-radius: 60%;">        
+    </h1>
+<!-- Navbar Start ----------------------------------------------------------- -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <!-- <a href="" class="navbar-brand"><img class="w-25 h-25" src="images/logo.png" alt=""></a> -->
+
+    <div class="container-fluid">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#nav-b"
+        aria-controls="nav-b" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+
+      <div class="collapse navbar-collapse" id="nav-b">
+        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+          <li class="nav-item nav-link border-3 border-start border-end"><a href="" class="nav-link anav "><strong
+                class="text-color">Home</strong></a></li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item border-4 border-start border-end"><a href="" class="nav-link anav"><strong
+                class="text-color">Vegetables </strong></a></li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item border-3 border-start border-end"><a href="" class="nav-link anav"><strong
+                class="text-color">Fruits</strong></a></li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item border-3 border-start border-end"><a href="" class="nav-link anav"><strong
+                class="text-color">Exotic Vegetables</strong></a></li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item border-3 border-start border-end"><a href="" class="nav-link anav"><strong
+                class="text-color">Exotic Fruits</strong></a></li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item border-3 border-start border-end"><a href="" class="nav-link anav"><strong
+                class="text-color">Salad Items</strong></a></li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <button type="button" onclick="openAdminHTML()" class="btn"><i class="fa fa-bank "></i><strong
+              class="user-login">Admin</strong></button>
+          <button type="button" onclick="openUserHTML()" class="btn"><i class="fa fa-user "></i><strong
+              class="user-login">User</strong></button></li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <form action="" class="d-flex"> <input type="search" placeholder="Search food items" class="form-control me-2">
+            <button type="submit" class="btn btn-outline-info">Search</button>
+          </form>
+        </ul>
+      </div>
+
+
+    </div>
+
+
+  </nav>
+<!-- Navbar End ----------------------------------------------------------- -->
+<br>
+<div class="container-fluid ">
+
+
+    <button onclick="openUserHTML()" type="button" class="btn btn-secondary" style="position: absolute;
+right: 10px;
+top: 145px;">User Login</button>
+<div class="card position-absolute top-50 start-50 translate-middle " style="margin-top: 155px;"> <!--this line will put the card in the centre-->
+    <div class="card-body user-card">
+        <h6 class="card-header mb-3" style="text-align: center; background-color: lightblue;">Admin Login</h6>
+        <form action="">
+            <div class=""> <!--username field-->
+                <label class="form-label" for="username"><strong>Username:</strong></label>
+                <input class="form-control" type="text" name="user-name" id="username" required>
+            </div>
+
+            <div class="">
+                <label class="form-label" for="user-email"><strong>Email</strong></label>
+                <input class="form-control" type="email" name="user-email" id="user-email" required>
+            </div>
+            <div class="">
+                <label class="form-label" for="user-password"><strong>Password</strong></label>
+                <input class="form-control" type="password" name="user-password" id="user-password" required>
+            </div>
+            <div class=""> <!--Gender -->
+                <label for="user-gender" class="form-label"><strong>Gender</strong></label>
+                <input class="form-check-input" type="radio" name="user-gender" value="male" id="male">
+                <label for="male">
+                    Male <!--Male-->
+                </label>
+                <input class="form-check-input" type="radio" name="user-gender" value="female" id="female">
+                <label for="female">
+                    Female <!--Female-->
+                </label>
+            </div>
+            <div class="">
+                <label class="form-label" for="user-age"><strong>DOB</strong></label>
+                <input type="date" class="form-control" name="userage" id="user-age" required>
+            </div>
+            <div class="">
+                <label class="form-label" for="shop-name"><strong>Shop Name</strong></label>
+                <input type="text" class="form-control" name="shopname" id="shopname" required>
+            </div>
+            <div class="">
+                <label class="form-label" for="product-categories"><strong>Product Cateogories</strong></label>
+                <select name="" id="product-categories" class="form-select" req>
+                    <option value=" " selected>----------</option>
+                    <option value="Vegetables" >Vegetables</option>
+                    <option value="fruits" >Fruits</option>
+                    <option value="exotic vegetables" >Exotic Vegetables</option>
+                    <option value="exotic fruits" >Exotic Fruits</option>
+                    <option value="salad fruits" >Salad</option>
+
+
+
+
+
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

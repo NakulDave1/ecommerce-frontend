@@ -1,0 +1,92 @@
+html{
+  scroll-behavior:smooth;
+}
+
+
+.page-title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:lime;
+}
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+
+}
+.bg-success{
+  background-color:forestgreen !important;
+}
+.text-color{
+  color: black;
+}
+
+
+.carousel-settings{
+  background-color: #f8e8e8 !important
+
+}
+h4,p{
+  text-align: center;
+}
+
+.a{
+      display: block;
+      text-decoration:dotted;
+      color: #FFE4FA;
+      text-align: center;
+      transition:  .25s, box-shadow .15s;
+      &:hover {
+          color: #463f94;
+          background: #6ea37b;
+          box-shadow: 0px 4px 0px 0px #46791d;
+      }
+      @media all and (min-width: 545px) {
+          padding: 20px;
+      }
+  }
+.btn-card{
+  background-color: #e65e03;
+
+}
+.card{
+  display: inline;
+}
+.card:hover{
+  transform: scale(1.1);
+   
+  
+}
+.card-body{
+  background-color: orange;
+
+
+}
+
+.logo{
+  height: 50px;
+  width: 50px;
+}
+
+.product-categories{
+  text-align: center;
+  background-color: greenyellow;
+  display: inline;
+}
+.user-login{
+  text-align: center;
+}
+
+.product-settings{
+  display: inline;
+}
+.user-card{
+  background-color: lightblue;
+}
+
+
+.a-sidebar-link:hover{
+  color: darkorange;
+  transform: scale(1.1);
+  
+}
+
